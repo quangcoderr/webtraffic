@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiêu đề bài viết - Content Hub</title>
+  
+  <!-- Libraries -->
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .post-container {
+        max-width: 800px;
+        margin: 4rem auto;
+        animation: fadeIn 0.8s ease-out;
+    }
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        margin-bottom: 2rem;
+        transition: color 0.2s;
+    }
+    .back-link:hover {
+        color: var(--primary);
+    }
+    .post-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    .disclosure {
+        background: rgba(99, 102, 241, 0.1);
+        border: 1px solid var(--primary);
+        padding: 1rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 3rem;
+    }
+    .content {
+        font-size: 1.15rem;
+        color: var(--text-main);
+        opacity: 0.9;
+    }
+    .content p {
+        margin-bottom: 1.5rem;
+    }
+    .ad-section {
+        background: var(--bg-surface);
+        border: 1px dashed var(--border);
+        padding: 2rem;
+        text-align: center;
+        border-radius: 16px;
+        margin: 4rem 0;
+        color: var(--text-muted);
+    }
+    .affiliate-section {
+        margin-top: 5rem;
+        padding: 3rem;
+        background: var(--bg-surface);
+        border-radius: 24px;
+        border: 1px solid var(--border);
+    }
+    .affiliate-section h3 {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .affiliate-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    .affiliate-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        transition: transform 0.2s;
+    }
+    .affiliate-item:hover {
+        transform: scale(1.02);
+        border-color: var(--secondary);
+    }
+    .affiliate-item h4 {
+        margin-bottom: 0.5rem;
+    }
+    .affiliate-item p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+    }
+    .btn-action {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.2s;
+    }
+    .btn-action:hover {
+        background: var(--primary-hover);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html" class="logo">CONTENT HUB</a>
+  </nav>
+
+  <div class="container">
+    <div class="post-container">
+      <a href="../index.html" class="back-link">
+        <i data-lucide="arrow-left"></i> Quay lại trang chủ
+      </a>
+
+      <header class="post-header">
+        <h1>Bắt đầu hành trình xây dựng nội dung cá nhân</h1>
+        <div class="disclosure">
+          <i data-lucide="info" style="color: var(--primary); flex-shrink: 0;"></i>
+          <p>Lưu ý: Bài viết này có chứa các liên kết tiếp thị (affiliate links). Nếu bạn mua hàng thông qua các liên kết này, tôi có thể nhận được một khoản hoa hồng nhỏ mà không làm tăng thêm chi phí cho bạn.</p>
+        </div>
+      </header>
+
+      <article class="content">
+        <p>Chào mừng bạn đến với bài viết đầu tiên trên hệ thống chia sẻ nội dung mới. Đây là nơi chúng ta sẽ cùng nhau khám phá những kiến thức bổ ích và những trải nghiệm thực tế.</p>
+        
+        <p>Trong kỷ nguyên số hiện nay, việc sở hữu một không gian riêng để lưu trữ và chia sẻ kiến thức không chỉ giúp bạn hệ thống lại tư duy mà còn mở ra nhiều cơ hội kết nối với những người cùng chí hướng. Với giao diện hiện đại và tối giản này, tôi hy vọng bạn sẽ có những trải nghiệm đọc tuyệt vời nhất.</p>
+
+        <div class="ad-section">
+          <i data-lucide="layout" style="margin-bottom: 0.5rem;"></i>
+          <p>Google AdSense Placement</p>
+          <span style="font-size: 0.75rem;">Quảng cáo hiển thị tại đây</span>
+        </div>
+
+        <p>Hãy cùng bắt đầu bằng việc thiết lập những mục tiêu cụ thể và chọn cho mình một phong cách viết phù hợp. Đừng quá lo lắng về sự hoàn hảo, điều quan trọng nhất là sự chân thành và giá trị bạn mang lại cho cộng đồng.</p>
+      </article>
+
+      <section class="affiliate-section">
+        <h3><i data-lucide="gift"></i> Công cụ đề xuất</h3>
+        <div class="affiliate-grid">
+          <div class="affiliate-item">
+            <h4>Hosting Tốc Độ Cao</h4>
+            <p>Giải pháp lưu trữ tối ưu cho các trang blog cá nhân với băng thông không giới hạn.</p>
+            <button class="btn-action">Xem ưu đãi</button>
+          </div>
+          <div class="affiliate-item">
+            <h4>Khóa Học Content</h4>
+            <p>Học cách xây dựng nội dung hấp dẫn và thu hút hàng ngàn lượt truy cập mỗi tháng.</p>
+            <button class="btn-action">Xem chi tiết</button>
+          </div>
+          <div class="affiliate-item">
+            <h4>Thiết Bị Ghi Hình</h4>
+            <p>Tổng hợp các thiết bị quay phim, chụp ảnh tốt nhất cho người mới bắt đầu.</p>
+            <button class="btn-action">Xem danh sách</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Content Hub. Bản quyền thuộc về tác giả.</p>
+    </footer>
+  </div>
+
+  <script src="../app.js"></script>
+</body>
+</html>
